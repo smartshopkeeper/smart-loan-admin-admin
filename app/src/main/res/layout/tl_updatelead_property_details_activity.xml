@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/layouttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hederbackground"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_below="@+id/layouttop"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="100">
+
+        <ScrollView
+            android:id="@+id/scrollviewrightleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/scrolllayout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutleaddetails"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtleaddetais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="Property Details:"
+                    android:textColor="@color/hederbackground"
+                    android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/layoutmainlead"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/txtleaddetais"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <!--<RelativeLayout-->
+                    <!--android:id="@+id/layoutpropertyaddress"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtproprtyaddrss"-->
+                        <!--android:layout_width="150dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:text="Property address:"-->
+                        <!--android:textColor="@color/darkgraycolor"-->
+                        <!--android:textSize="14dp"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/txtproprtyaddrss1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_toRightOf="@+id/txtproprtyaddrss"-->
+                        <!--android:background="@drawable/edittextanimation"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="@color/mainTextColor"-->
+                        <!--android:textSize="14dp" />-->
+
+                <!--</RelativeLayout>-->
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/layouttellusaboutproperty"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtaboutproperty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Tell Us About Your Property:"
+                            android:textColor="@color/black_color"
+                            android:textStyle="bold"
+                            android:textSize="14dp" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupaboutproperty"
+                            android:layout_below="@+id/txtaboutproperty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/radioPresanction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Pre-Sanction"/>
+
+                            <RadioButton
+                                android:id="@+id/radiopurchasepropety"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Purchase Propety identified" />
+
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutpurchasepropertyYN"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_below="@+id/layouttellusaboutproperty"
+                        android:gravity="center_vertical">
+
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupaboutpropertyYesNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="40dp">
+
+                            <RadioButton
+                                android:id="@+id/radioYES"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"/>
+
+                            <RadioButton
+                                android:id="@+id/radioNO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:checked="true"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/layoutpropertyaddresspin"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/layoutpurchasepropertyYN"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+                        <!--android:layout_below="@+id/layoutpropertyaddress"-->
+                        <TextView
+                            android:id="@+id/txtpropertyaddresspin"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="PIN code"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:id="@+id/txtpropertyaddresspin1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/txtpropertyaddresspin"
+                            android:background="@drawable/edittextanimation"
+                            android:padding="10dp"
+                            android:text=""
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutpropertyaddresslandmark"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layoutpropertyaddresspin"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtpropertylandmark"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Land Mark"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:id="@+id/txtpropertylandmark1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/txtpropertylandmark"
+                            android:background="@drawable/edittextanimation"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutpropertyaddressarea"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layoutpropertyaddresslandmark"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtpropertyarea"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Area"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:id="@+id/txtpropertyarea1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/txtpropertyarea"
+                            android:background="@drawable/edittextanimation"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutpropertyaddressprojectname"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layoutpropertyaddressarea"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtpropertyprojectname"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Project Name"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:id="@+id/txtpropertyprojectname1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/txtpropertyprojectname"
+                            android:background="@drawable/edittextanimation"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutpropertytype"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layoutpropertyaddressprojectname"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtpropertytype"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Property Type:"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp" />
+
+                        <Spinner
+                            android:id="@+id/txtpropertytype1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/txtpropertytype"
+                            android:background="@drawable/edittextanimation"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/layoutDownpayment"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layoutpropertytype"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtdownpayment"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Down Payment"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:id="@+id/txtdownpayment1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/txtdownpayment"
+                            android:background="@drawable/edittextanimation"
+                            android:padding="10dp"
+                            android:text=""
+                            android:inputType="number"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutLoanrequirement"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layoutDownpayment"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtloanrequirement"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:text="Loan Requirement"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txtloanrequirement1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/txtloanrequirement"
+                            android:background="@drawable/edittextanimation"
+                            android:padding="10dp"
+                            android:text=""
+                            android:inputType="number"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layotDescription"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/layoutLoanrequirement"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txtdescription"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Description:"
+                            android:textColor="@color/darkgraycolor"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:id="@+id/txtdescription1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/txtdescription"
+                            android:background="@drawable/edittextanimation"
+                            android:padding="10dp"
+                            android:text="◙ "
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtapplicantdetails"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_below="@+id/layoutpropertytype"-->
+                        <!--android:text="Applicant Details:"-->
+                        <!--android:textColor="@color/hederbackground"-->
+                        <!--android:textSize="20dp"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantname"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/txtapplicantdetails"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantname"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Full Name"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantname1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantname"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:id="@+id/applicantgender"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/layoutapplicantname"-->
+                        <!--android:textColor="@color/darkgraycolor"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:text="Gender:"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantgender"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantname"-->
+                        <!--android:layout_toRightOf="@+id/applicantgender"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_margin="20dp"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_horizontal">-->
+
+                        <!--<RadioGroup-->
+                            <!--android:id="@+id/radioapSex"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioapMale"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Male"/>-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioapFemale"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Female" />-->
+
+                        <!--</RadioGroup>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantdob"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantgender"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantdob"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Date Of Birth"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantdob1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantdob"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:inputType="date"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantcontactno"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantdob"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantcontactno"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Contact Number"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantcontactno1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantcontactno"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="10"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantaltcontactno"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantcontactno"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantaltcontactno"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Alternate Contact Number"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantaltcontactno1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantaltcontactno"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="10"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantemail"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantaltcontactno"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantemail"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Email"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantemail1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantemail"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:inputType="textEmailAddress"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:id="@+id/applicanteducation"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/layoutapplicantemail"-->
+                        <!--android:textColor="@color/darkgraycolor"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:text="Education:"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicanteducation"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantemail"-->
+                        <!--android:layout_toRightOf="@+id/applicanteducation"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:layout_marginLeft="40dp"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_horizontal">-->
+
+                        <!--<RadioGroup-->
+                            <!--android:id="@+id/radioeapplicantducation"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioapUG"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Under Graduate"/>-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioapGraguate"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Graduate" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioapPG"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Post Graduate" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioapprofessional"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Professional" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioapother"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Other" />-->
+
+                        <!--</RadioGroup>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantcurrentaddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicanteducation"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantcurrentaddress"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Current Address"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantcurrentaddress1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantcurrentaddress"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantperaddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantcurrentaddress"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantperaddress"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Permanent Address"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantperaddress1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantperaddress"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+
+
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutrecidenttype"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutapplicantperaddress"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtresidenttype"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Recident Type:"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/txtresidenttype1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtresidenttype"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutapplicantofficeaddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutrecidenttype"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtapplicantofficeaddress"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Office Address"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtapplicantofficeaddress1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtapplicantofficeaddress"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtKYCdocuments"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_below="@+id/layoutapplicantofficeaddress"-->
+                        <!--android:text="KYC Documents :"-->
+                        <!--android:textColor="@color/hederbackground"-->
+                        <!--android:textSize="20dp"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutKYCdocuments"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/txtKYCdocuments"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="left"-->
+                        <!--android:gravity="left">-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxadhar"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Adhar"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxpan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxadhar"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="PAN"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxvoterid"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxpan"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Voter ID"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxDL"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@id/checkboxvoterid"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Driving License"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxkycpassport"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxDL"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Passport"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtproofofaddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_below="@+id/layoutKYCdocuments"-->
+                        <!--android:text="Proof Of Address for salaried/SEP/SENP:"-->
+                        <!--android:textColor="@color/hederbackground"-->
+                        <!--android:textSize="20dp"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutproofofaddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/txtproofofaddress"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="left"-->
+                        <!--android:gravity="left">-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofadhar"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Adhar"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofvoterid"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxproofadhar"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Voter Id"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofdl"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxproofvoterid"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Driving License"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxprrofelectricitybill"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@id/checkboxproofdl"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Electricity Bill License"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofpassport"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxprrofelectricitybill"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Passport"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofrentagreement"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxproofpassport"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Rent Agreement"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofgvtempid"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxproofrentagreement"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Govt. Employee ID"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofgumasta"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxproofgvtempid"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Gumasta"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkboxproofcurrentacctstmt"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_below="@+id/checkboxproofgumasta"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Current Account Stament"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutcoapplicantdetails"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutproofofaddress"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtcoapplicant"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=" Co-Applicant Relation:"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/txtcoapplicant1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtcoapplicant"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtreference"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_below="@+id/layoutcoapplicantdetails"-->
+                        <!--android:text="Reference1"-->
+                        <!--android:textColor="@color/hederbackground"-->
+                        <!--android:textSize="20dp"/>-->
+
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreferencefullname"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/txtreference"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreferencefullname"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Mr./Mrs"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreferencefullname1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreferencefullname"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreferenceaddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutreferencefullname"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreferenceaddress"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Address"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreferenceaddress1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreferenceaddress"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreferencecontactno"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutreferenceaddress"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreferencecontactno"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Contact Number:"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreferencecontactno1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreferencecontactno"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="10"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreferencerelationhsip"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutreferencecontactno"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreferencecrelationship"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Relationship:"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreferencecrelationship1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreferencecrelationship"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/txtreferenceTwo"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_below="@+id/layoutreferencerelationhsip"-->
+                        <!--android:text="Reference 2"-->
+                        <!--android:textColor="@color/hederbackground"-->
+                        <!--android:textSize="20dp"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreference2fullname"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/txtreferenceTwo"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreference2fullname"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Mr./Mrs"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreference2fullname1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreference2fullname"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreference2address"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutreference2fullname"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreference2address"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Address"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreference2address1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreference2address"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreference2contactno"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutreference2address"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreference2contactno"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Contact Number:"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreference2contactno1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreference2contactno"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="10"-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutreference2relationhsip"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_below="@+id/layoutreference2contactno"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txtreferencec2relationship"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text="Relationship:"-->
+                            <!--android:textColor="@color/darkgraycolor"-->
+                            <!--android:textSize="14dp"/>-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/txtreferencec2relationship1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtreferencec2relationship"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:id="@+id/layoutbuttonnext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layotDescription"
+                        android:padding="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/buttonupdatenext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/btnRequest"
+                            android:text="UPDATE"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <Button
+                            android:id="@+id/buttonveryfy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/btnRequest"
+                            android:text="VERIFY"
+                            android:layout_toRightOf="@+id/buttonupdatenext"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="7dp">
+
+    <EditText
+        android:id="@+id/edtloginid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:background="@drawable/edittextanimation"
+        android:hint="Add Login ID"
+        android:inputType="textMultiLine"
+        android:padding="10.0dip"
+        android:text=""
+        android:layout_margin="5dp"
+        android:textColor="@color/mainTextColor"
+        android:textSize="14.0dip" />
+
+    <Button
+        android:id="@+id/btn_addlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="SUBMIT"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/edtloginid"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+

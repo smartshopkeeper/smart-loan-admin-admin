@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/layouttop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/hederbackground"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Lead Id: 2345"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layouttop"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:padding="1dp"
+            >
+
+            <ScrollView
+                android:id="@+id/scrollviewrightleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/scrolllayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mainlayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="1dp"
+                        android:weightSum="100">
+
+                    <LinearLayout
+                        android:id="@+id/mainlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="60"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Date:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtcname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="C Name:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+
+                            <TextView
+                                android:id="@+id/txtcaddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="C Address:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtcpaddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Prop Address:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtcontatct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Contact:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtbirthdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Birth Date:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtpan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Pan No:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtadhar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Adhar No:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtbank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Bank:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+
+                            <TextView
+                                android:id="@+id/txtloantype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Loan Type:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtjob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Ocuupation:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtincome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Income(monthly):"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtloanammount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Ex Amount:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+
+                            <TextView
+                                android:id="@+id/txtagentid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Genrated By:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="40"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtdate1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="25 sep 2018"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtcname1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="P Patel"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+
+                            <EditText
+                                android:id="@+id/txtcaddress1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Andheri east mumbai,40001"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtcpaddress1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="malad west,mumbai,101231"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtcontatct1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="+91 9089879878"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+
+                            <EditText
+                                android:id="@+id/txtbirthdate1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="22 April 1987"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtpan1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="CPM488393"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtadhar1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="9876 6477 7488 2222"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+
+                            <TextView
+                                android:id="@+id/txtbank1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="India Bulls"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txt_loan_type_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="LAP"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txt_ocuupation_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="Doctor"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtincome1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="45000"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtloanammount1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="600000"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+
+                            <EditText
+                                android:id="@+id/txtagentid1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:padding="5dp"
+                                android:text="AG 56477"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutbuttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="bottom"
+                        android:layout_marginTop="20dp"
+                        android:weightSum="100">
+
+                        <Button
+                            android:id="@+id/buttonupdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/btnRequest"
+                            android:text="Submit to Bank"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="bottom"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+                    </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

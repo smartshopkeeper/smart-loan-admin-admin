@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Leads"
+            android:icon="@drawable/leadsimage"
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:title="Leads" />
+        <item
+            android:id="@+id/Invices"
+            android:icon="@drawable/invoicesicon"
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:title="Invoices" />
+        <item
+            android:id="@+id/Reports"
+            android:icon="@drawable/reportsimage"
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:title="Reports" />
+        <item
+            android:id="@+id/Users"
+            android:icon="@drawable/usersimage2"
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:title="Users" />
+        <item
+            android:id="@+id/Calulator"
+            android:icon="@drawable/calculatoricon"
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:title="Loan Calculator" />
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/calculatoricon"
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:title="Logout" />
+    </group>
+</menu>

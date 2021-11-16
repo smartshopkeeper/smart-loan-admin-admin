@@ -1,0 +1,335 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="3dp"
+                card_view:cardMaxElevation="3dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="80"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/profile_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:src="@drawable/avatar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txt_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="Customer Name: "
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_name_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="Name"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txt_contact"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Contact No: "
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                                <TextView
+                                    android:id="@+id/txt_contact_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Contact"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txt_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address: "
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                                <TextView
+                                    android:id="@+id/txt_address_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txt_Bank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bank: "
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                                <TextView
+                                    android:id="@+id/txt_Bank_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bank"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txt_Agent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Assigned By: "
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                                <TextView
+                                    android:id="@+id/txt_Agent_Value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Assigned By"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txt_Assign_DateTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Assigned DateTime: "
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                                <TextView
+                                    android:id="@+id/txt_Assign_DateTime_Value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Assigned DateTime"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:layout_weight="50"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/graycolor"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/txt_Appointment_Date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Appointment Date: "
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="50"/>
+
+                                <TextView
+                                    android:id="@+id/txt_Appointment_Date_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Assigned DateTime"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="50"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--                                        <View-->
+                    <!--                                            android:layout_width="match_parent"-->
+                    <!--                                            android:layout_height="2dp"-->
+                    <!--                                            android:layout_margin="10dp"-->
+                    <!--                                            android:background="@color/lightgray" />-->
+
+                    <!--                                        <LinearLayout-->
+                    <!--                                            android:layout_width="match_parent"-->
+                    <!--                                            android:layout_height="wrap_content"-->
+                    <!--                                            android:orientation="horizontal"-->
+                    <!--                                            android:padding="5dp"-->
+                    <!--                                            android:weightSum="100">-->
+
+                    <!--                                            <LinearLayout-->
+                    <!--                                                android:layout_width="match_parent"-->
+                    <!--                                                android:layout_height="wrap_content"-->
+                    <!--                                                android:layout_marginTop="5dp"-->
+                    <!--                                                android:layout_weight="50"-->
+                    <!--                                                android:orientation="horizontal">-->
+
+                    <!--                                                <TextView-->
+                    <!--                                                    android:layout_width="wrap_content"-->
+                    <!--                                                    android:layout_height="wrap_content"-->
+                    <!--                                                    android:layout_gravity="center"-->
+                    <!--                                                    android:layout_marginLeft="7dp"-->
+                    <!--                                                    android:gravity="center"-->
+                    <!--                                                    android:text="Agent:"-->
+                    <!--                                                    android:textColor="@color/whitetextcolor"-->
+                    <!--                                                    android:textSize="14dp" />-->
+
+                    <!--                                                <ImageView-->
+                    <!--                                                    android:id="@+id/agent_call"-->
+                    <!--                                                    android:layout_width="wrap_content"-->
+                    <!--                                                    android:layout_height="wrap_content"-->
+                    <!--                                                    android:layout_gravity="center"-->
+                    <!--                                                    android:layout_marginLeft="10dp"-->
+                    <!--                                                    android:src="@drawable/call" />-->
+
+                    <!--                                            </LinearLayout>-->
+
+                    <!--                                            <LinearLayout-->
+                    <!--                                                android:layout_width="match_parent"-->
+                    <!--                                                android:layout_height="wrap_content"-->
+                    <!--                                                android:layout_marginTop="5dp"-->
+                    <!--                                                android:layout_weight="50"-->
+                    <!--                                                android:orientation="horizontal">-->
+
+                    <!--                                                <TextView-->
+                    <!--                                                    android:layout_width="wrap_content"-->
+                    <!--                                                    android:layout_height="wrap_content"-->
+                    <!--                                                    android:layout_marginLeft="7dp"-->
+                    <!--                                                    android:text="Client:"-->
+                    <!--                                                    android:textColor="@color/whitetextcolor"-->
+                    <!--                                                    android:textSize="14dp" />-->
+
+                    <!--                                                <ImageView-->
+                    <!--                                                    android:id="@+id/client_call"-->
+                    <!--                                                    android:layout_width="wrap_content"-->
+                    <!--                                                    android:layout_height="wrap_content"-->
+                    <!--                                                    android:layout_marginLeft="10dp"-->
+                    <!--                                                    android:src="@drawable/call" />-->
+
+                    <!--                                            </LinearLayout>-->
+
+                    <!--                                        </LinearLayout>-->
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

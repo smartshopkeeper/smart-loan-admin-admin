@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/layouttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hederbackground"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:text="Mr Pratik Patel"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_avtar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layouttop"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/avatar" />
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_avtar"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="User Name"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Leed Id:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Agent"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Status"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Generated Date"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtApliedLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Applied "
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtApproved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Approved"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtLoantype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Loan Type"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtDateOfJoining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Date Of Joining:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="40"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUserNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Name"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtLeedIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="0000152"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_agent_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Agent"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_status_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Satatus"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_generated_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="01/02/2000"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_applied_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="100000"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_approved_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="100000"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_loan_type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Loan Type"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_joining_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="30 september 2018"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutedittextreson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlayout">
+
+        <EditText
+            android:id="@+id/edittextresone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0sp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_bprder"
+            android:gravity="center_horizontal"
+            android:hint="Reject then Enter Reason"
+            android:maxLength="30"
+            android:padding="10sp"
+            android:paddingLeft="4dp"
+            android:textColor="@color/whitetextcolor"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

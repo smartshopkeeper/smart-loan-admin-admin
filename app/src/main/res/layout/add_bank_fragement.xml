@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".view.fragements.UnderConstrationFragement">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txtbankname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittextanimation"
+            android:padding="20dp"
+            android:text=""
+            android:hint="Add Bank Name"
+            android:textColor="@color/mainTextColor"
+            android:textSize="14dp" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/txtbankbranch"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20sp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:background="@drawable/edittextanimation"-->
+            <!--android:padding="10dp"-->
+            <!--android:text=""-->
+            <!--android:hint="Add Branch Name"-->
+            <!--android:textColor="@color/mainTextColor"-->
+            <!--android:textSize="14dp"-->
+            <!--/>-->
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtbankname"
+            android:layout_margin="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="3dp"
+            card_view:cardMaxElevation="3dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="6dp"
+            android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/banklogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnaddbank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_below="@+id/card_view"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Add"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sales Persons"
+                android:textColor="@color/mainTextColor"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtcname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File given"
+                android:textColor="@color/mainTextColor"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_agents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+</LinearLayout>

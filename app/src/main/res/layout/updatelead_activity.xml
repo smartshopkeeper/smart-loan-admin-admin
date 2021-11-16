@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/layouttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hederbackground"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layouttop"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="100">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="3dp"
+                card_view:cardMaxElevation="3dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        android:weightSum="100">
+
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="80"
+                            android:src="@drawable/avatar" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:layout_weight="20"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtcnamevalue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="C Name:"
+                                    android:textColor="@color/whitetextcolor"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="50">
+
+                                        <TextView
+                                            android:id="@+id/txt_id_value"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/text_background"
+                                            android:padding="8dp"
+                                            android:text="Id:"
+                                            android:textColor="@color/white"
+                                            android:textSize="12dp" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/txt_bp_value"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="50"
+                                        android:text="B.P."
+                                        android:textColor="@color/whitetextcolor"
+                                        android:textSize="14dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <TextView
+                                        android:id="@+id/txt_loan_type_value"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="50"
+                                        android:text="loan type"
+                                        android:textColor="@color/whitetextcolor"
+                                        android:textSize="17dp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txt_loan_requirement_value"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="50"
+                                        android:text="loan requirement"
+                                        android:textColor="@color/whitetextcolor"
+                                        android:textSize="14dp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="6dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Agent:"
+                                android:textColor="@color/whitetextcolor"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:id="@+id/agent_call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/call" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Client:"
+                                android:textColor="@color/whitetextcolor"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:id="@+id/client_call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/call" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="@color/lightgray" />
+
+        <ScrollView
+            android:id="@+id/scrollviewrightleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/scrolllayout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layoutleaddetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/txtleaddetais"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:text="Leed Details:"
+                        android:textColor="@color/hederbackground"
+                        android:textSize="20dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutmainlead"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/txtleaddetais"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutleaddate"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtleeddate"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Date:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtdate1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtleeddate"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutleadtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutleaddate"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtleedtime"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Time:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtleedtime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtleedtime"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutleadid"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutleadtime"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtleadid"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Leed Id:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtleadidvalue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtleadid"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutagentid"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutleadid"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtagentid"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Channel Partner:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtagentid1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtagentid"
+                                android:background="@drawable/edittextanimation"
+                                android:editable="false"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/layoutchannelpartner"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_below="@+id/layoutagentid"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="center_vertical">-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/txtchannelpartner"-->
+                        <!--android:layout_width="150dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:text="Channel Partner:"-->
+                        <!--android:textColor="@color/darkgraycolor"-->
+                        <!--android:textSize="14dp" />-->
+
+                        <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/txtchannelpartner1"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_toRightOf="@+id/txtchannelpartner"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:background="@drawable/edittextanimation"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:padding="10dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text=""&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/mainTextColor"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="14dp" />&ndash;&gt;-->
+
+                        <!--</RelativeLayout>-->
+
+                        <RelativeLayout
+                            android:id="@+id/layoutLoantype"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutagentid"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtloantype"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Loan Type:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/sploantype1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtloantype"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutLoansubtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutLoantype"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtloansubtype"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Home Loan type:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/sploansubtype1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtloansubtype"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutLoanbttype"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutLoansubtype"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtloanbttype"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Balance trancefer type:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/sploanbttype1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtloanbttype"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutcallingstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutLoanbttype"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtcallingstatus"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Call received status"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtcallingstatusvalue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtcallingstatus"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutcallingstatusreason"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutcallingstatus"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtcallingstatusreason"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Appointment reschedule"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtcallingstatusreasonvalue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtcallingstatusreason"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:focusable="false"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/layoutbuttonnext"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutcallingstatusreason"
+                            android:gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/buttonupdatenext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="30dp"
+                                android:background="@color/hederbackground"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="UPDATE/NEXT"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutbuttons"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_below="@+id/layoutbuttonnext"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="15"
+                            android:gravity="bottom"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/buttonupdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33"
+                                android:background="@color/btnRequest"
+                                android:text="UPDATE"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <Button
+                                android:id="@+id/buttonverify"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1sp"
+                                android:layout_weight="33"
+                                android:background="@color/btnRequest"
+                                android:hint="Enter Notice Description"
+                                android:text="SUBMIT"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <Button
+                                android:id="@+id/buttoncancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1sp"
+                                android:layout_weight="33"
+                                android:background="@color/btnRequest"
+                                android:hint="Enter Notice Description"
+                                android:text="CANCEL"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

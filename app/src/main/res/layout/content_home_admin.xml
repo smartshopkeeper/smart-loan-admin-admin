@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/mainFrame"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:layout_editor_absoluteX="0dp"-->
+    <!--        tools:layout_editor_absoluteY="0dp" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_total_leeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Leeds"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total_leedcount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <TextView
+                                android:id="@+id/approved_leeds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="10"
+                                android:text="Generated leeds"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/generated_leeds_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="90"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@color/graycolor" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <TextView
+                                android:id="@+id/rejected_leeds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="10"
+                                android:text="Rejected leeds"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/rejected_leeds_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="90"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_banks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <!--                        <ImageView-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="match_parent"-->
+                            <!--                            android:layout_gravity="center"-->
+                            <!--                            android:layout_weight="90"-->
+                            <!--                            android:background="@drawable/cerclebackgroundpink"-->
+                            <!--                            android:padding="10dp"-->
+                            <!--                            android:src="@drawable/banks" />-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="10"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Banks"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/graycolor" />
+
+                                <TextView
+                                    android:id="@+id/banks_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Banks"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Active Users"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/graycolor" />
+
+                        <TextView
+                            android:id="@+id/users_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_loan_calculator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="90"-->
+                        <!--                        android:background="@drawable/cerclebackgroundyello"-->
+                        <!--                        android:padding="10dp"-->
+                        <!--                        android:src="@drawable/calculator" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Loan Calculator"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/graycolor" />
+
+                            <TextView
+                                android:id="@+id/calc_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Calculate EMI"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_Commission"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="90"-->
+                        <!--                        android:padding="10dp"-->
+                        <!--                        android:background="@drawable/cerclebackgroundviolet"-->
+                        <!--                        android:src="@drawable/payment_method"/>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Commission"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/graycolor" />
+
+                            <TextView
+                                android:id="@+id/commission"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Add Commission Details"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_bills"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="90"-->
+                        <!--                        android:background="@drawable/cerclebackgroundyello"-->
+                        <!--                        android:padding="10dp"-->
+                        <!--                        android:src="@drawable/bill" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bills"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/graycolor" />
+
+                            <TextView
+                                android:id="@+id/bills_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Generate Bills"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_Checklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="90"-->
+                        <!--                        android:padding="10dp"-->
+                        <!--                        android:background="@drawable/cerclebackgroundpurple"-->
+                        <!--                        android:src="@drawable/checklist"/>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Checklist"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/graycolor" />
+
+                            <TextView
+                                android:id="@+id/checklist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Generate Checklist"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_Reports"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="90"-->
+                        <!--                        android:padding="10dp"-->
+                        <!--                        android:background="@drawable/cerclebackgroundpurple"-->
+                        <!--                        android:src="@drawable/reports" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reports"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/graycolor" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/reports"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Total Leeds"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/reports_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="90"
+                                    android:text="0"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_Invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="90"-->
+                        <!--                        android:padding="10dp"-->
+                        <!--                        android:background="@drawable/cerclebackgroundpurple"-->
+                        <!--                        android:src="@drawable/checklist"/>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Invoices"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/invoices_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/generated_invoices"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Generated Invoices"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/generated_invoices_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="90"
+                                    android:text="0"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/graycolor" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:id="@+id/approved_invoices"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Approved Invoices"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/approved_invoices_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="90"
+                                    android:text="0"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_Target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:layout_weight="90"-->
+                        <!--                        android:padding="10dp"-->
+                        <!--                        android:background="@drawable/cerclebackgroundpurple"-->
+                        <!--                        android:src="@drawable/reports" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Targets"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/graycolor" />
+
+                            <TextView
+                                android:id="@+id/targets"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Set Targets"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

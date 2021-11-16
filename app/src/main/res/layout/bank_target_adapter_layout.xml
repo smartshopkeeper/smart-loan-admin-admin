@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/layoutdetails"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_dropshadow"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="80">
+
+            <TextView
+                android:id="@+id/txtBankname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bank:"
+                android:textColor="@color/darkgraycolor"
+                android:layout_weight="20"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graycolor"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"/>
+
+            <TextView
+                android:id="@+id/txtsettarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="target:"
+                android:textColor="@color/darkgraycolor"
+                android:gravity="center"
+                android:layout_weight="20"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graycolor"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"/>
+
+            <TextView
+                android:id="@+id/txtloggedamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="logged amount:"
+                android:textColor="@color/darkgraycolor"
+                android:gravity="center"
+                android:layout_weight="20"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/graycolor"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"/>
+
+            <TextView
+                android:id="@+id/txtbalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="balance:"
+                android:textColor="@color/darkgraycolor"
+                android:gravity="center"
+                android:layout_weight="20"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+

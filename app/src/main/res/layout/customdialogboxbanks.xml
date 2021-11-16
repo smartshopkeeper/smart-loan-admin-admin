@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="7dp">
+
+    <EditText
+        android:id="@+id/txtsearchbank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:background="@drawable/edittextanimation"
+        android:inputType="textMultiLine"
+        android:padding="10.0dip"
+        android:text=""
+        android:hint="Search..."
+        android:textColor="@color/mainTextColor"
+        android:textSize="14.0dip" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bank_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtsearchbank">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
+

@@ -1,0 +1,32 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/txtsearcheditbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:background="@drawable/edittextanimation"
+            android:inputType="textMultiLine"
+            android:padding="10.0dip"
+            android:text=""
+            android:layout_margin="5dp"
+            android:hint="Search...."
+            android:textColor="@color/mainTextColor"
+            android:textSize="14.0dip" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_leeds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

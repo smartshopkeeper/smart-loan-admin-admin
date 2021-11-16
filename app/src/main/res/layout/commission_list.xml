@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutAnimation="@anim/layout_animation_up_to_down"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center">-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/minvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="min-value"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_color"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/minvalue"
+            android:textColor="@color/black_color"
+            android:background="@color/white"
+            android:text="-"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/maxvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="max-value"
+            android:layout_toRightOf="@+id/dash"
+            android:textColor="@color/black_color"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/commissionpercentage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:background="@drawable/edittextanimation"
+            android:padding="10.0dip"
+            android:text=""
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:textColor="@color/mainTextColor"
+            android:layout_below="@+id/minvalue"
+            android:textSize="14.0dip" />
+
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/DefaultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commissionpercentage"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="UPDATE"
+            android:textColor="@color/white" />
+
+    <!--</RelativeLayout>-->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

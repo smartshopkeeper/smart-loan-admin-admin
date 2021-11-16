@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/layouttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hederbackground"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5sp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp"
+            android:text="Mr Pratik Patel"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_avtar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layouttop"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/avatar" />
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_avtar"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="User Id:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="User Type:"
+
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Address:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Mobile Number:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Email:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Gender:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtDateOfBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Date Of Birth:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtDateOfJoining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Date Of Joining:"
+                android:textColor="@color/darkgraycolor"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="40"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUserIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="0000152"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Accountant"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_address_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="505,Mumbai,410061"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_mobile_number_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="7700895645"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="pratikPatel@gmail.com"
+
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_gender_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Male"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_dob_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="30 september 1992"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txt_joining_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="30 september 2018"
+                android:textColor="@color/whitetextcolor"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutedittextreson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlayout">
+
+        <EditText
+            android:id="@+id/edittextresone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0sp"
+            android:background="@drawable/edittext_bprder"
+            android:gravity="center_horizontal"
+            android:hint="Reject then Enter Reason"
+            android:maxLength="30"
+            android:padding="10sp"
+            android:paddingLeft="4dp"
+            android:textColor="@color/whitetextcolor"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutedittextreson"
+        android:gravity="center_horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/dialogButtonaccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@color/btnRequest"
+            android:text="Active"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/dialogButtonreject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1sp"
+            android:layout_weight="50"
+            android:background="@color/red"
+            android:hint="Enter Notice Description"
+            android:text="Deactive"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+</RelativeLayout>

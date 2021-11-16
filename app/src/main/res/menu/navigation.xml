@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_leeds"
+        android:icon="@drawable/arrow_on_target"
+        android:title="Leeds" />
+
+    <item
+        android:id="@+id/navigation_customer"
+        android:icon="@drawable/team"
+        android:title="Customers" />
+
+    <item
+        android:id="@+id/navigation_label"
+        android:icon="@drawable/tag1"
+        android:title="Labels" />
+
+    <item
+        android:id="@+id/navigation_tasks"
+        android:icon="@drawable/list"
+        android:title="Tasks" />
+
+    <item
+        android:id="@+id/navigation_business"
+        android:icon="@drawable/diagram"
+        android:title="My Business" />
+
+</menu>

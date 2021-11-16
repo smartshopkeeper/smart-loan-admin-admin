@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Banks"
+        android:id="@+id/btmbanks"
+        android:icon="@drawable/bank"/>
+    <item
+        android:title="Leads"
+        android:id="@+id/btmleads"
+        android:icon="@drawable/menulead"/>
+    <item
+        android:title="SalesPerson"
+        android:id="@+id/btmsalespersons"
+        android:icon="@drawable/sales"/>
+
+    <item
+        android:title="Daily leads"
+        android:id="@+id/btmdailyleads"
+        android:icon="@drawable/sales"/>
+
+
+</menu>

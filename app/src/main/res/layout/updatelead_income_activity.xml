@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/layouttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hederbackground"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layouttop"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="100">
+
+        <ScrollView
+            android:id="@+id/scrollviewrightleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/scrolllayout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layoutleaddetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/txtleaddetais"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:text="Income Details:"
+                        android:textColor="@color/hederbackground"
+                        android:textSize="20dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layoutmainlead"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/txtleaddetais"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutoccupation"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtoccupation"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Occupation Type:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <RadioGroup
+                                android:id="@+id/radioOccupation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txtoccupation">
+
+                                <RadioButton
+                                    android:id="@+id/radioSalaried"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Salaried" />
+
+                                <RadioButton
+                                    android:id="@+id/radioselfEmployed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Self Employed" />
+
+                            </RadioGroup>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutCompanytype"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutoccupation"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtcompanytype"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Company Type:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/spinnercompanytype"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtcompanytype"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutothercompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutCompanytype"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtothercompany"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Other Details"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtothercompany1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtothercompany"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layouttenure"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutothercompany"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txttenure"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Tenure with current company"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/txttenure1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txttenure"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txttenureyear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Years"
+                                android:layout_toRightOf="@+id/txttenure1"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/txttenuremonth"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txttenureyear"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/texttenuremonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Months"
+                                android:layout_toRightOf="@+id/txttenuremonth"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutexperience"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layouttenure"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtexperience"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Total work Experience"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/txtexperience1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtexperience"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtyear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Years"
+                                android:layout_toRightOf="@+id/txtexperience1"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/txtmonths1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtyear"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/txtmonths"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Months"
+                                android:layout_toRightOf="@+id/txtmonths1"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutdepartment"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutexperience"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtdepartment"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Department"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtdepartment1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtdepartment"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutdesignation"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutdepartment"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtdesignation"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Designation"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtdesignation1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtdesignation"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txtIncomSourcedetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutdesignation"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:text="Income Source Details:"
+                            android:textColor="@color/hederbackground"
+                            android:textSize="20dp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/layoutgrosssalary"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/txtIncomSourcedetails"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtmontlygrossincome"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Monthly Gross salary"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtmontlygrossincome1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtmontlygrossincome"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutnetsalary"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutgrosssalary"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtnetsalary"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Monthly net Salary:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtnetsalary1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtnetsalary"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutovertime"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutnetsalary"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtovertime"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Overtime Extra:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtovertime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtovertime"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutincentive"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutovertime"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtiincentive"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Incentive:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtiincentive1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtiincentive"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutbonus"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutincentive"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtbonus"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Bonus:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtbonus1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtbonus"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutrent"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutbonus"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtrent"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Rental income if any:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtrent1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtrent"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutagreecultureincome"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutrent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtagreecultureincome"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Agreeculture income if any:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtagreecultureincome1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtagreecultureincome"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutannualincome"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutagreecultureincome"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtannualincome"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Gross Annual Income:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtannualincome1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtannualincome"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutotherincome"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutannualincome"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtotherincome"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Other Income:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtotherincome1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtotherincome"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutothers"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutotherincome"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtloantype"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Salary comes in:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <Spinner
+                                android:id="@+id/sploantype1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtloantype"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txtmonthlyexpence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutothers"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:text="Monthly Expence:"
+                            android:textColor="@color/hederbackground"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/layoutrentalexpence"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/txtmonthlyexpence"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtrentalexpence"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Rental:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtrentalexpence1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtrentalexpence"
+                                android:background="@drawable/edittextanimation"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutEMI"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutrentalexpence"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txtemi"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="EMI:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/layoutcarloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_below="@+id/txtemi"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical">
+
+                                <CheckBox
+                                    android:id="@+id/checkboxCarloan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="10dp"
+                                    android:text="Car Loan"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+
+                                <EditText
+                                    android:id="@+id/txtcarloanamount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="90dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_toRightOf="@+id/checkboxCarloan"
+                                    android:background="@drawable/edittextanimation"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:maxLength="7"
+                                    android:text=""
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layouthomeloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_below="@+id/layoutcarloan"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical">
+
+                                <CheckBox
+                                    android:id="@+id/checkboxHomeloan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="10dp"
+                                    android:text="Home Loan"
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                                <EditText
+                                    android:id="@+id/txthomeloanamount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="73dp"
+                                    android:layout_toRightOf="@+id/checkboxHomeloan"
+                                    android:background="@drawable/edittextanimation"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:maxLength="7"
+                                    android:text=""
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layoutsocietyloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_below="@+id/layouthomeloan"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical">
+
+                            <CheckBox
+                                android:id="@+id/checkboxSocietyloan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Society/Employer Loan"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                                <EditText
+                                    android:id="@+id/txtsocietyloanamount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_toRightOf="@+id/checkboxSocietyloan"
+                                    android:background="@drawable/edittextanimation"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:maxLength="7"
+                                    android:text=""
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layoutpersonalloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_below="@+id/layoutsocietyloan"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical">
+
+
+                            <CheckBox
+                                android:id="@+id/checkboxPersonalloan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Personal Loan"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                                <EditText
+                                    android:id="@+id/txtpersonalloanamount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="55dp"
+                                    android:layout_toRightOf="@+id/checkboxPersonalloan"
+                                    android:background="@drawable/edittextanimation"
+                                    android:padding="10dp"
+                                    android:inputType="number"
+                                    android:maxLength="7"
+                                    android:text=""
+                                    android:textColor="@color/mainTextColor"
+                                    android:textSize="14dp" />
+
+                            </RelativeLayout>
+
+                            <CheckBox
+                                android:id="@+id/checkboxOtherloan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layoutpersonalloan"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Other Loan"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+
+                            <!--<Spinner-->
+                            <!--android:id="@+id/spemi1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_toRightOf="@+id/txtemi"-->
+                            <!--android:background="@drawable/edittextanimation"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/mainTextColor"-->
+                            <!--android:textSize="14dp" />-->
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/layoutotheremidetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutEMI"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtotheremi"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Other EMI Details:"
+                                android:textColor="@color/darkgraycolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtotheremi1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@+id/txtotheremi"
+                                android:background="@drawable/edittextanimation"
+                                android:padding="10dp"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:text=""
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/txtincomedocsforsalaried"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutotheremidetails"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:text="Income Documents Required for salaried Customer/Salaried NRI Customer:"
+                            android:textColor="@color/hederbackground"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/layoutDocscheckbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/txtincomedocsforsalaried"
+                            android:layout_gravity="left"
+                            android:gravity="left">
+
+                            <CheckBox
+                                android:id="@+id/checkboxsalarysleep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Salary Sleep of last 6 Months"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxbankstatement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxsalarysleep"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Bank Statement of last 6 months Updated till date"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxform16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxbankstatement"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Form No. 16 of last 2 years or ITR of last 2 years"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxappointmentletter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/checkboxform16"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Appointment Letter"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxconfermationletter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxappointmentletter"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Confermation Letter"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxexpletter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxconfermationletter"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Relieving letter/Experience Letter"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txtNRI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutDocscheckbox"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:text="NRI:"
+                            android:textColor="@color/hederbackground"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/layoutDocsNRI"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/txtNRI"
+                            android:layout_gravity="left"
+                            android:gravity="left">
+
+                            <CheckBox
+                                android:id="@+id/checkboxvisa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Valid VISA"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxpassport"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxvisa"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Passport"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxEmployerletter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxpassport"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Employer Letter for address proof"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxcontractletter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/checkboxEmployerletter"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Contract Letter"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxPOA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxcontractletter"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="POA as per Format"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxNREbank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxPOA"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="NRE/NRO Bank Account Details"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxOverseasbank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxNREbank"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Oversease Bank Account Details"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txtIncomecocsforselfemployed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutDocsNRI"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:text="Income Documents Required for Self-Employed Customer:"
+                            android:textColor="@color/hederbackground"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/layoutDocsselfemployed"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/txtIncomecocsforselfemployed"
+                            android:layout_gravity="left"
+                            android:gravity="left">
+
+                            <CheckBox
+                                android:id="@+id/checkboxITR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="ITR of last 3 yearsCA Attested"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxcurrentaccountstatement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxITR"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Current Account Statement of last 1 years updated till date"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxsavingacctstatement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxcurrentaccountstatement"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Saving Account statement of last one year"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxpartnerdeed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/checkboxsavingacctstatement"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Partnersheep Deed if applicable"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxbusinessagreement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxpartnerdeed"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Business Conducting Agreement if any"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                            <CheckBox
+                                android:id="@+id/checkboxqualification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkboxbusinessagreement"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="Qualification Certificate for professionals"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/layoutDocsselfemployed"
+                            android:gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/buttonupdatenext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="30dp"
+                                android:background="@color/btnRequest"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="UPDATE/NEXT"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutbuttons"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="15"
+                            android:gravity="bottom"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/buttonupdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33"
+                                android:background="@color/btnRequest"
+                                android:text="UPDATE"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <Button
+                                android:id="@+id/buttonverify"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1sp"
+                                android:layout_weight="33"
+                                android:background="@color/btnRequest"
+                                android:hint="Enter Notice Description"
+                                android:text="SUBMIT"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <Button
+                                android:id="@+id/buttoncancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1sp"
+                                android:layout_weight="33"
+                                android:background="@color/btnRequest"
+                                android:hint="Enter Notice Description"
+                                android:text="CANCEL"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

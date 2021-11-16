@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="7dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/checklist_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsearchbank">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <EditText
+                android:id="@+id/txtaddchecklistitem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checklist_recycle"
+                android:layout_marginTop="7.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:background="@drawable/edittextanimation"
+                android:inputType="textMultiLine"
+                android:padding="10.0dip"
+                android:text=""
+                android:textColor="@color/mainTextColor"
+                android:textSize="14.0dip" />
+
+            <Button
+                android:id="@+id/buttonadditem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/hederbackground"
+                android:text="Add Item"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonaddchecklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/hederbackground"
+                android:text="Submit List"
+                android:textColor="@color/white" />
+            <!--    <ListView-->
+            <!--        android:id="@+id/checklist"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_margin="5dp">-->
+
+            <!--    </ListView>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
